@@ -382,7 +382,7 @@ z(`.fa-chevron-right`).onclick =(e)=>{
 z(`.fa-chevron-left`).onclick =(e)=>{
     n--;if(n < 1){n = 7;};ss(e);
 };function ss(e){
-    imgs =`url(imgs/${n}.jpg)`;
+    imgs =`url(${n}.jpg)`;
     z(`.landing`).style.backgroundImage = imgs;
     localStorage.setItem(`my_background`, imgs);
     wit(z(`.fa-chevron-right`));wit(z(`.fa-chevron-left`));
